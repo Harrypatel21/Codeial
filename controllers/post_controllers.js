@@ -1,3 +1,6 @@
 module.exports.createPost = function(req, res){
-    return res.end('<h1>Create post</h1>');
+   return res.render('Post',{
+    title:'createpost',
+    myName:"hariom"
+   });
 }
