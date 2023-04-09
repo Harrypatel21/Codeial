@@ -5,8 +5,10 @@ const port = 8000;
 const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/mongoose');
 
+app.use(bodyParser());
 app.use(express.urlencoded());
 app.use(cookieParser());
+app.use(express.static('./assets'));
 // use layouts 
 app.use(expressLayouts);
 
